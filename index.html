@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Elle va t'entendre</title>
+</head>
+<body>
+    <section class="memory-box">
+  <div class="card-container">
+    <div class="card">
+      <img src="photo/M&M2.jpeg" alt="Our Memory">
+      <p>Il y a un poème que je lisais souvent sans vraiment le comprendre. Il disait <br>: "On ne connaît la valeur  de quelqu'un qu'après son absence."<br> À l'époque, je le lisais sans rien ressentir... <br>Mais après t'avoir perdue, j'ai enfin compris ce que ces mots voulaient dire.<br> Certaines personnes ne réalisent la valeur d'un cœur qu'une fois qu'il n'est plus là. <br>Aujourd'hui, je sais que tu me manques bien plus que je ne l'aurais imaginé. </p>
+      
+    </div>
+    </div>
+    <div class="music-player">
+  <div class="song-info">
+    <h3>Tu penses que cette chanson lui rappellera quelque chose?</h3>
+  </div>
+  
+  <div class="visualizer">
+    <div class="bar"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+    <div class="bar4"></div>
+  </div>
+  
+  <audio controls class="custom-audio">
+    <source src="Bomba.mp3" type="audio/mpeg">
+  </audio>
+</div>
+</section>
+<script>
+  document.addEventListener('click', function() {
+      var audio = document.querySelector('.custom-audio');
+      audio.play();
+  }, { once: true });
+
+</script>
+    
+</body>
+</html>

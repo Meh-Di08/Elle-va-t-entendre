@@ -1,0 +1,159 @@
+*{
+  cursor: url('cur/knife.png'), auto;
+  cursor: url('cur/blood.png') pointer !important;
+}
+body {
+background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVX5hnjKET-4KYliHt_jI3Sx1Mg113l9sXkIbVS_w9ew&s=10');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.05);
+}
+
+img {
+  width: 450px;
+  border-radius: 15px;
+}
+
+.music-player {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 25px;
+  padding: 20px;
+  width: 300px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  text-align: center;
+  color: rgb(0, 0, 0);
+  margin: 30px 100px;
+  transition: transform 0.3s ease;
+  cursor: url('cur/blood.png') pointer !important;
+}
+
+.music-player:hover{
+  transform: translateY(-10px) scale(1.05);
+}
+
+.custom-audio {
+  width: 100%;
+  height: 35px;
+  filter: invert(100%) hue-rotate(180deg) brightness(1.5);
+  margin-top: 15px;
+}
+
+.visualizer {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  height: 20px;
+  align-items: flex-end;
+}
+
+.bar {
+  width: 4px;
+  height: 100%;
+  background: #636363;
+  animation: bounce 0.6s infinite ease-in-out alternate;
+}
+.bar2 {
+  width: 4px;
+  height: 100%;
+  background: #636363;
+  animation: bounce 0.5s infinite ease-in-out alternate;
+}
+.bar3 {
+  width: 4px;
+  height: 100%;
+  background: #636363;
+  animation: bounce 0.4s infinite ease-in-out alternate;
+}
+.bar4 {
+  width: 4px;
+  height: 100%;
+  background: #636363;
+  animation: bounce 0.3s infinite ease-in-out alternate;
+}
+
+
+@keyframes bounce {
+  from { height: 5px; }
+  to { height: 20px; }
+}
+
+
+@media screen and (max-width: 768px) {
+  body {
+    height: auto;
+    display: block; 
+    padding: 20px 0;
+  }
+
+  .memory-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 0 10px;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  }
+
+  .card-container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .card {
+    width: 100%;
+    margin: 10px 0;
+  }
+  
+  .card:hover {
+    transform: none; 
+  }
+
+  .music-player {
+    width: 85%;
+    margin: 20px auto;
+    padding: 15px;
+  }
+
+  .music-player:hover {
+    transform: none;
+  }
+
+  .card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  img {
+  width: 300px;
+  border-radius: 15px;
+}
+
+}
